@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2,
+    "name": "Weirdify Markdown",
+    "description": "Type regular markdown. Convert to weird Stack Overflow-friendly markdown.",
+    "version": "1.0",
+    "permissions": [
+        "tabs",
+        "http://stackoverflow.com/*",
+        "https://stackoverflow.com/*"
+    ],
+    "background" : {
+        "scripts" : [
+            "background.js"
+        ]
+    },
+    "browser_action": {
+        "default_title": "Convert to weird Stack Overflow-friendly markdown."
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "http://stackoverflow.com/*",
+                "https://stackoverflow.com/*"
+            ],
+            "js": [
+                "jquery.js",
+                "turndown.js",
+                "showdown.js"
+            ]
+        }
+    ]
+}
