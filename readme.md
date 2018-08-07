@@ -1,5 +1,7 @@
 # Weirdify Markdown
 
+Get the extension at the [Chrome Web Store](https://chrome.google.com/webstore/detail/weirdify-markdown/chbodjbichobmpllbdnoeegaoblholpm).
+
 Takes proper [GitHub Flavored Markdown](https://github.github.com/gfm/0) that everyone already uses and converts it into the weird Stack Overflow markdown that no one remembers how to use.
 
 This specifically fixes the issue whereby Stack Overflow doesn't support triple backtick-fenced code blocks.
